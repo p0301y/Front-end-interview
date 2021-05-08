@@ -1,0 +1,408 @@
+自我介绍以及项目经历一定要准备好，基本都会问。
+要自己多想想你说的这段项目经历，面试官会如何问你。
+算法题不需要怎么刷，但是热题100 简单+中等 还是尽可能做一下。
+网络协议问到的不多，但是还是要看一下。
+还是集中时间搞前端基础以及八股。
+
+蚂蚁金服 （难度较大，一面就是高P大佬，主要会深挖你的项目，请注意项目经历） 
+
+自我介绍 
+
+聊项目 
+
+清理浮动的方式 各自的优缺点
+position的各个取值 自己其相对定位元素 
+
+js模块化amd cmd cjs esm 区别
+给了道题
+a.js
+export let lalala=2
+setTimeout(()=>{lalala=3}), 2000)
+b.js
+import {lalala} from a.js
+console.log(lalala)
+setTimeout(()=>{console.log(lalala)}) 
+
+一道异步队列题，需要口喷实现
+两个按钮，一个按钮点击后隔一段时间打印A，一个按钮点击后隔一段时间打印B，两个按钮随意点击，最后需要先进先出
+
+反正就是考察promise.then 
+
+前端安全方面 
+
+xss攻击 csor攻击口喷区别原理以及防御方式 
+
+前端工程
+如何优化打出来包的体积
+如何提升本地的开发体验 
+
+口喷css tree shaking 实现原理
+
+
+PDD 
+一面（难度一般，比较注重基础以及自己的理解）
+
+自我介绍
+
+扯扯项目 
+
+最近做的一件事 
+
+平时开发组件是如何分类的？依据是什么？
+
+用node做过什么 
+
+React渲染错误如何处理？Error Boundary 
+
+React-Redux的原理是什么？说一下简单的实现
+
+如何提升首屏体验 
+
+耗时计算任务如何处理 
+
+setState与useState区别 
+
+为什么hook不能放到if 语句里面？ 
+
+setState是同步还是异步的 
+
+useEffect与useLayoutEffect区别，有使用过吗？遇见过什么坑？ 
+
+react如何做到高优先级插队的 
+
+axios如何同构的。如何区分node或者浏览器执行环境？ 
+
+页面间如何相互通信 
+
+两道题
+判断html字符串是否合法
+一道字符串匹配题 kmp变种 不要求能够ac 但是需要有思路并且写出来（差不多算是手写kmp）
+
+
+二面（比较困难，会了解你的深度，主要围绕简历开展） 
+
+自我介绍 
+
+讲一个自己做的最棒的功能 
+
+做过哪些内部事项 
+
+根据简历做的事情闲聊，展开聊有没有了解其他工具或者api或者库可以做这些事情 
+
+ssr流程
+一道题手写
+约瑟夫环变种，不是环。
+
+
+
+安居客 
+
+一面（被瑞哥安利，面试前已经被Leader定级收了）
+自我介绍 
+
+将一个最近印象最深刻的功能 
+
+闲聊，到时间二面 
+
+二面（技术总监面试，闲聊） 
+
+自我介绍 
+
+介绍一下最体验自己技术的功能 
+
+职业规划是什么？为此最近做出的努力是什么？
+
+如果有个需求让你摘下天上的月亮，你该如何规划。 
+
+三面（交叉面试，主要考察对于技术的追求） 
+
+自我介绍 
+
+职业规划 
+
+通过什么渠道学习 
+
+了解最新的技术是什么？（然后就展开了闲聊深挖模式）
+我提到的是vite
+
+酷家乐
+一面（考察基础） 
+
+自我介绍
+聊项目 
+
+BFC是什么 
+
+如何清理浮动 
+
+微任务宏任务 
+
+谈谈Promise的理解 
+
+一次setState发生了什么 
+
+diff原理 17的diff 
+
+深浅拷贝区别 
+
+口喷两道题
+n阶乘的零的个数
+求n以内的素数 
+
+二面（随便问问就撸题） 
+
+自我介绍
+聊项目 
+
+写深搜广搜
+深搜递归改迭代 
+
+路径和
+递归回溯
+
+三面（八股＋做题） 
+
+自我介绍
+
+聊聊最近印象最深的一个feature，扮演什么角色
+
+react 如何从jsx到dom的（这里聊得比较久）
+react element, fiber, tree(current,wip), effect list
+
+无限柯里化以及改写toString
+add(1, 2, 3)(4)(5, 6) // 21
+add(1, 2, 3) // 6
+
+算法：约瑟夫环
+
+
+猫眼
+一面（随意聊聊项目与基础＋手写hook）
+自我介绍
+聊项目
+伪类伪元素区别
+如何清理浮动 
+
+useRef与createRef区别 
+
+怎么理解immutable 
+
+手写hook，两个button，一个点击后加1，一个点击后减1，使用useRef存储上一个值。
+
+
+二面（leader面试，八卦） 
+
+自我介绍，聊项目
+
+如果出现线上bug如何debug
+
+怎么优化包的体积
+
+webpack如何优化热重载
+
+webpack优化打包速度
+
+最近了解什么新技术
+
+职业规划
+
+
+携程
+
+一面（问项目+做题）
+
+自我介绍
+
+问项目
+
+浏览器渲染过程（从输入url到页面渲染）
+
+四道题
+promise打印顺序（网上随意找一下）
+打印generator log
+function* gen(x) {
+    const a = 4 * (yield x + 3);
+    console.log(a);
+    const b = yield a * 3;
+    console.log(b)
+    const c = yield 2 + b;
+    console.log(c);
+    return a + b + c;
+}
+const itor = gen(10);
+itor.next(10);
+itor.next(10);
+itor.next(10);
+
+柯里化
+
+作用域提升以及js执行顺序
+
+<html>
+<script>
+console.log(a) // 引用错误
+console.log(b) // 不再打印
+</script>
+<script>
+console.log(a)
+console.log(b)
+var a = 1;
+console.log(a)
+function b() {
+    console.log(a)
+    var a = 2;
+    console.log(a)
+}
+b();
+console.log(a)
+</script>
+
+
+</html>
+
+
+
+二面（全程问项目闲聊）
+
+自我介绍+聊项目
+
+虚拟化列表如何实现？简单口述一下实现
+
+描述一下diff算法。
+如果key重复会导致什么问题？为什么？
+导致会多一个元素渲染。因为底层存储是个set。
+
+什么是控制反转
+
+redux-saga的优点是什么？
+
+
+三面（问项目闲聊）
+
+自我介绍
+
+聊项目
+
+为什么换工作？下一份工作想做什么？
+
+从参加工作到现在学到了什么？（技术以及沟通能力）
+
+独立领导一个项目需要考虑什么
+
+浏览器渲染过程（从输入url到页面渲染）
+
+三次握手四次挥手
+
+https如何加密
+
+手写一道题：开根号
+
+
+
+字节广告部门一面
+自我介绍
+
+项目难点 亮点
+
+为什么使用saga
+
+打包慢，如何优化
+
+热更新慢如何优化
+
+事件代理，event target，currentTarget分别是什么
+
+React代码为何不需要考虑事件代理
+
+17.0与16版本区别，为何17把事件代理到应用自己的根节点上而不是document
+
+每隔5s中插一条数据到列表头上
+
+长轮询短轮询
+
+setTimeout与setInterval区别
+
+为什么需要设计出微任务，直接全部都是宏任务不行吗？
+
+怎么用js实现一个平滑的动画效果，requestAnimationFrame
+如果要兼容ie11以下，如何达到requestAnimationFrame的效果
+
+react为何要求返回singleRoot
+
+封装一个轮询包
+
+Promise.all
+
+实现PromiseWithTimeout，Promise.race
+
+Promise.race原理是什么
+
+
+字节抖音视频一面
+实现一个useInterval的hook，
+
+我觉得这题有问题。
+
+如 Demo组件在挂载 3s后被卸载，此时显示3，卸载两秒后再挂载。此时显示5
+
+function Demo() {
+    const [count, setCount] = useState(0);
+    useInterval(() => { setCount((prevCount) => prevCount + 1) }, 1000);
+    return (<div>{count}</div>);
+}
+
+function useInterval(cb, delay) {
+    
+}
+
+
+输出log
+async function async1() {
+    console.log("async1 start");
+    await async2();
+    console.log("async1 end");
+}
+async function async2() {
+    console.log( 'async2');
+}
+console.log("script start");
+setTimeout(function () {
+    console.log("setTimeout");
+},0);
+async1(); 
+new Promise(function (resolve) {
+    console.log("promise1");
+    resolve();
+}).then(function () {
+    console.log("promise2");
+});
+console.log('script end');
+
+
+var result = [];
+var a = 3;
+var total = 0;
+function foo(a) {
+    var i = 0;
+    for (; i < 3; i++) {
+        result[i] = function() {
+            total += i * a;
+            console.log(total);
+        }
+    }
+}
+
+foo(1);
+result[0](); 
+result[1](); 
+result[2]();
+
+
+二维数组顺时针螺旋打印
+[
+    [1,2,3],
+    [4,5,6],
+    [7,8,9]
+]
+1 2 3 6 9 8 7 4 5
+

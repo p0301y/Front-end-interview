@@ -84,7 +84,7 @@
      })
      ```
 
-     单例模式
+     - 单例模式
 
      作为容器列表组件，使用单例模式不仅节约了内存空间，而且单利延迟执行的特性也保证了在没有通知的情况下不会生成notification组件，提升了页面性能
 
@@ -172,7 +172,7 @@
    ```
    // 动态规划
    // 深度优先遍历（递归）回溯法
-```
+   ```
    
 6. node.js的事件循环和浏览器的事件循环，以及区别
 
@@ -239,8 +239,8 @@
 
    1.  type和interface的区别
       相同点：
-        \- 都可以描述一个对象或者一个函数
-        \```
+        - 都可以描述一个对象或者一个函数
+        ```
           interface User {
             name: string;
             age: number
@@ -253,24 +253,23 @@
             age: number;
           }
           type SetUser = (name: string, age: number): void
-        \```
-        \- 拓展和交叉类型: interface可以extends,但type是不允许extends和implement的，但是type可以通过交叉类型实现interface的extends行为
-        \```
+        ```
+        - 拓展和交叉类型: interface可以extends,但type是不允许extends和implement的，但是type可以通过交叉类型实现interface的extends行为
+        ```
           interface Name {
             name: string;
           }
           interface User extends Name {
             age: number;
           }
-
-   ​    type Name = {
-   ​      name: string;
-   ​    }
-   ​    type User = Name & {age: number}
-     \```
+          type Name = {
+            name: string;
+          }
+          type User = Name & {age: number}
+        ```
    不同点：
-     \- type可以声明基本类型别名。联合类型，元组等类型
-     \```
+     - type可以声明基本类型别名。联合类型，元组等类型
+     ```
    ​    // 基本类型别名
    ​    type Name = string
 
@@ -285,14 +284,14 @@
 
    ​    // 元组
    ​    type PetList = [Dog, pet]
-     \```
-     \- type语句中还可以使用typeof获取实例的类型进行赋值
-     \```
+     ```
+     - type语句中还可以使用typeof获取实例的类型进行赋值
+     ```
    ​    let div = document.createElement('div');
    ​    type B = typeof div
-     \```
-     \- interface能够声明合并
-     \```
+     ```
+     - interface能够声明合并
+     ```
    ​    interface User {
    ​      name: string;
    ​      age: number;
@@ -301,43 +300,42 @@
    ​    interface User {
    ​      sex: string;
    ​    }
-     \```
+     ```
 
    2. interface和abstract的区别
       抽象类: abstract修饰，里面可以有抽象方法。但是抽象方法必须在抽象类里面(通常控制实现)
-      \```
+      ```
       abstract class Thing {
         height: number;
         setAttribute: (value: any) => void;
         abstract setValue: (value: any) => void;
       }
-      \```
+      ```
       接口（多态）: 父类定义方法和属性，让继承它的子类去实现，每一个子类由不同的表现
-      \```
+      ```
       interface Electrician {
         layWires(): void
       }
-
-   interface Plumber {
-     layPipes(): void
-   }
-   function restoreHouse(e: Electrician, p: Plumber) {
-     e.layWires()
-     p.layPipes()
-   }
-   \```
+      interface Plumber {
+        layPipes(): void
+      }
+      function restoreHouse(e: Electrician, p: Plumber) {
+        e.layWires()
+        p.layPipes()
+      }
+      ```
 
    [https://github.com/SunshowerC/blog/issues/7#type-%E5%8F%AF%E4%BB%A5%E8%80%8C-interface-%E4%B8%8D%E8%A1%8C](https://github.com/SunshowerC/blog/issues/7#type-可以而-interface-不行)
 
    3. 工具函数的实现
       https://zhuanlan.zhihu.com/p/40311981
-      \```
+      ```
       type Partial<T> = {[P in keyof T]?: T[P]}
       type Pick<T, K extends keyof T> = {[P in K]: T[P]};
       type Exclude<T, U> = T extends U ? nerver : T;
       type Omit<T, K> = Pick<T, Exclude<keyof T, K>>
       type ReturnType<T> = T extends (...args: any[]) => infer R ? R : any;
-      \```
+      ```
 
 7. css问题（如何实现宽高等比例缩放）
 
@@ -347,16 +345,17 @@
       - 增加wrap,使用padding-top或者padding-bottom实现
       -  使用vw视口单位实现  
 
-         ```
+      ```
       .box {
-            width: 100%;
-            height: 50vw;
-          }
-         ```
+        width: 100%;
+          height: 50vw;
+        }
+      }
+      ```
 
       
 
-8. curry函数的实现fn(1, 2, 3),curry = makeCurry(fn), fn(1, 2, 3) = curry(1)(2)(3) 
+8. curry函数的实现fn(1, 2, 3),curry = makeCurry(fn), fn(1, 2, 3) = curry(1)(2)(3)
 
    ```
    var makeCurry = (fn) => {
@@ -724,6 +723,7 @@
 
 4. 实现控制并发量的工厂函数createFetchFactory
 
+  ```
    const proxyFetch = createFetchFactory(2)
 
    proxyFetch('/v1/test/name') 
@@ -731,6 +731,7 @@
    proxyFetch('/v1/test/age') 
 
    proxyFetch('/v1/test/sexy') 
+   ```
 
    ```
    var fetch = url => new Promise((resolve, reject) => {
@@ -882,12 +883,5 @@
 5. babel插件的解法
 6. 团队的贡献
 7. 埋点
-
-
-
-
-
-
-
 
 

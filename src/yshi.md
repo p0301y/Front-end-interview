@@ -297,7 +297,7 @@ function fn() {
 (async function() {
   await fn();
   console.log(1);
-});
+})();
 
 console.log(3);
 ```

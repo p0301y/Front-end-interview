@@ -308,11 +308,11 @@ const B = { name() {} };
 
 A.name1 = { name1() {} };
 A.prototype.name2 = { name2() {} };
-A.prototype.name3 = { name3() {} };
+A.__proto__.name3 = { name3() {} };
 
 B.name1 = { name1() {} };
 B.prototype.name2 = { name2() {} };
-B.prototype.name3 = { name3() {} };
+B.__proto__.name3 = { name3() {} };
 ```
 5. `react hooks`使用可以在定义之前吗？
 ```

@@ -21,7 +21,7 @@
 - ssr，data是怎么在服务端和浏览器之间传输的
 - mongo，树结果，覆盖索引
 - java，几种同步的方式，反射原理
-- 算法题，类似于模拟试下match的正则匹配，给定一个字符串s和字符规律p，只包含小写字母和 '.' '*',  '.'代表一个字符， '*'代表零个或多个前一个字母
+- 算法题，类似于模拟试下match的正则匹配，给定一个字符串s和字符规律p，只包含小写字母和 '.' '*',  '.'代表一个字符， '*'代表零个或多个前一个字母 [leetcode原题](https://leetcode-cn.com/problems/regular-expression-matching/)
 ```js
 console.log(match('aa', 'a')); // => false
 console.log(match('', 'a*')); // => true

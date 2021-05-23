@@ -357,3 +357,93 @@ const fn = useCallback(() => ({}), [deps]);
 12. react渲染和dom操作最本质的区别是什么？react为什么高效？
 13. 高性能实现一个10*10的表格布局，适配移动，pc，pad各个终端？
 14. 基于13的10x10表格，添加一个按钮，点击给每个表格填充一种不同的颜色，用react怎么实现， div的用索引还是颜色值作为key，为什么？
+
+### 端点科技【杭州】
+1. 自我介绍
+2. 展开介绍项目中遇到的难题，怎么解决的？
+```
+大屏自适应，性能优化
+```
+3. 项目中用的react的版本是哪个？`react hooks`的有哪些, 使用场景？
+```
+useState: 
+useEffect: 
+useCallback: 
+useMemo:
+```
+4. `react hooks`的使用有哪些注意事项？
+```
+```
+5. 普通的`Component`和`pureComponent`的区别？
+```
+Component:
+pureComponent:
+```
+6. 平时使用`redux`管理状态的流程是怎样的？
+```
+state, reduce, action, effet
+```
+7.`dispatch action`怎么实现一个中间件，可以连接结果？
+```
+```
+8. `connect`组件获取状态怎么实现的，基本原理是是什么？
+```
+```
+9. es6常用的特性有哪些？
+```
+let, const, promise, 箭头函数, Set, Map...
+```
+10. 原生js实现一个`promise`？
+```
+```
+11. 换工作的原因是什么？找工作想找什么样的？
+```
+```
+12. 问面试官问题
+```
+公司是干嘛的？
+```
+
+### 乐言科技【上海】
+1. 自我介绍
+2. 用的react是哪个版本？都用过哪些hooks呢?
+3. `Component`和`pureComponent`有什么区别？为什么组件的比较要分浅比较和深比较？组件浅比较解决乐什么问题？
+4. object比较 == 和 === 有什么差别？
+5. 简单说下深浅拷贝？最简单的浅拷贝？解构是深or浅拷贝？
+6. 下面的返回的是什么？
+```
+const a = {};
+const b = a;
+const c = { ...a };
+console.log(a === b);
+console.log(a === c);
+```
+7. `react hooks`中的`useEffect`接受两个参数，加入有不同的第二个参数的话，callback的执行时机分别什么样的？第二个参数是空数组和其他变量，执行时机分别是什么样的？
+```
+const [a, setA] = useState(0);
+
+// deps为空数组
+useEffect(() => {
+  console.log(a);
+}, []);
+
+// deps为[a]
+useEffect(() => {
+  console.log(a);
+}, [a]);
+
+setA(1);
+```
+8. `useMemo`和`useCallback`的用法，有什么区别？使用的时候可以互换吗？
+```
+useMemo:
+useCallback:
+```
+9. 有函数组件之后，函数组件和类组件的优缺点是什么？
+```
+Component:
+FunctionComponnent: 
+```
+10. 用hooks怎么实现类组件中的生命周期函数？
+11. 工作中解决过的最困难的问题？
+12. React 16.8版本上的react fiber有了解么，简单介绍下

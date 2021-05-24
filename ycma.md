@@ -26,5 +26,6 @@ function parseExp(exp) {
 - 自我介绍
 - 是否了解react17新特性
 - class component 与 functional component 比较。二者在内存和性能上是否有不同？
+- webpack 原理，有没有自己写过loader和plugin，怎么做性能优化？
 - 是否了解微前端？（对方用了微前端，但是没有解决多应用间common lib的问题，估计是想问我这个）
 - 没有问前端基础，没有问算法题

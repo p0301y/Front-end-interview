@@ -304,7 +304,7 @@ console.log(3);
 4. `protototype`和`__proto__`的基本用法？下面哪个写法会报错？
 ```
 const A = { name() {} };
-const B = { name() {} };
+const B = function() { name() {} };
 
 A.name1 = { name1() {} };
 A.prototype.name2 = { name2() {} };
@@ -357,3 +357,188 @@ const fn = useCallback(() => ({}), [deps]);
 12. react渲染和dom操作最本质的区别是什么？react为什么高效？
 13. 高性能实现一个10*10的表格布局，适配移动，pc，pad各个终端？
 14. 基于13的10x10表格，添加一个按钮，点击给每个表格填充一种不同的颜色，用react怎么实现， div的用索引还是颜色值作为key，为什么？
+
+### 端点科技【杭州】
+1. 自我介绍
+2. 展开介绍项目中遇到的难题，怎么解决的？
+```
+大屏自适应，性能优化
+```
+3. 项目中用的react的版本是哪个？`react hooks`的有哪些, 使用场景？
+```
+useState: 
+useEffect: 
+useCallback: 
+useMemo:
+```
+4. `react hooks`的使用有哪些注意事项？
+```
+```
+5. 普通的`Component`和`pureComponent`的区别？
+```
+Component:
+pureComponent:
+```
+6. 平时使用`redux`管理状态的流程是怎样的？
+```
+state, reduce, action, effet
+```
+7.`dispatch action`怎么实现一个中间件，可以连接结果？
+```
+```
+8. `connect`组件获取状态怎么实现的，基本原理是是什么？
+```
+```
+9. es6常用的特性有哪些？
+```
+let, const, promise, 箭头函数, Set, Map...
+```
+10. 原生js实现一个`promise`？
+```
+```
+11. 换工作的原因是什么？找工作想找什么样的？
+```
+```
+12. 问面试官问题
+```
+公司是干嘛的？
+```
+
+### 乐言科技【上海】
+1. 自我介绍
+2. 用的react是哪个版本？都用过哪些hooks呢?
+3. `Component`和`pureComponent`有什么区别？为什么组件的比较要分浅比较和深比较？组件浅比较解决乐什么问题？
+4. object比较 == 和 === 有什么差别？
+5. 简单说下深浅拷贝？最简单的浅拷贝？解构是深or浅拷贝？
+6. 下面的返回的是什么？
+```
+const a = {};
+const b = a;
+const c = { ...a };
+console.log(a === b);
+console.log(a === c);
+```
+7. `react hooks`中的`useEffect`接受两个参数，加入有不同的第二个参数的话，callback的执行时机分别什么样的？第二个参数是空数组和其他变量，执行时机分别是什么样的？
+```
+const [a, setA] = useState(0);
+
+// deps为空数组
+useEffect(() => {
+  console.log(a);
+}, []);
+
+// deps为[a]
+useEffect(() => {
+  console.log(a);
+}, [a]);
+
+setA(1);
+```
+8. `useMemo`和`useCallback`的用法，有什么区别？使用的时候可以互换吗？
+```
+useMemo:
+useCallback:
+```
+9. 有函数组件之后，函数组件和类组件的优缺点是什么？
+```
+Component:
+FunctionComponnent: 
+```
+10. 用hooks怎么实现类组件中的生命周期函数？
+11. 工作中解决过的最困难的问题？
+12. React 16.8版本上的react fiber有了解么，简单介绍下
+
+### BTCEX
+1. 用过哪些布局，flex布局中flex属性的第二个值是什么作用？
+```
+.parent {
+  display: flex;
+}
+.child {
+  flex: 1 300px;
+}
+```
+3. `react` 16版本引入的`react hooks`, 有什么优缺点，解决了什么问题？
+是否遇到过什么坑？
+```
+```
+4. react更新阶段的生命周期执行顺序？
+```
+16.4以后：getDeriveStateFromProps -> shouldComponentUpdate -> getSnapshotBeforeUpdate -> render -> componentDidUpdate
+16.3以前：get
+5. 组件卸载阶段需要做哪些事情？
+```
+清除定时器，解除事件监听...
+```
+6. react中状态更新`setState`是同步还是异步的？
+```
+```
+7. http网络协议的，get和post请求的区别是什么？
+```
+get: 请求参数通过url传递
+post: 请求参数也可以放在url上，一般放在请求体中
+```
+8. get请求会被浏览器缓存，缓存机制是什么？怎么避免浏览器从缓存中拿请求数据？
+```
+用url作为key缓存的
+```
+9. http请求状态码`305`,`503`表示什么意思？
+```
+305: 只能通过代理访问的接口，不允许浏览器直接请求接口访问？
+503: 服务端过载，临时故障？
+```
+10. javascript的事件传播？
+11. 怎么禁止浏览器事件的捕获和冒泡？
+```
+禁止冒泡：
+禁止捕获：
+```
+12. 怎么解决`class component`中怎么解决`this`指向的问题？
+```
+```
+13. 箭头函数和普通函数的区别是什么？
+```
+箭头函数：
+普通函数：
+``` 
+### 玩物得志
+1.移动端兼容性处理方案，rem的原理是什么？
+2. 移动端怎么是指header中的meta的？
+```
+```
+3. 用过哪些es6的新特性？let/var/const 直接有什么区别？
+```
+var:
+let:
+const:
+```
+4. es6的class类和其他继承的方法有什么差异？
+```
+```
+5. `hybrid`开发模式下，从0到1搭建一个前端webview应用，前端需要考虑做哪些准备工作？
+```
+路由跳转，JSBriage
+```
+
+### 比心
+0. 自我介绍
+
+1. 简单介绍下http协议的get和post的区别？
+
+2. 原生实现一个ajax请求的几个步骤是什么？
+
+3. 实现一个简单的原型链继承和构造函数继承？各有什么优缺点？
+
+4. 有了解过CSRF攻击吗？简单介绍下，要怎么防范呢？
+
+5. 说说你做过的最有成就的项目，以及解决过哪些技术难题？
+
+6. 你怎么看toB场景和toC场景的业务区别？
+
+7. 。。。
+
+### 二面
+聊项目
+
+#### HR 
+聊规划

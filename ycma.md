@@ -19,6 +19,7 @@ function parseExp(exp) {
 - 聊人生聊理想聊职位匹配
 - 算法题 全排列
 - 算法题 滑动窗口最大值问题 [Sliding Window Maximum](https://leetcode.com/problems/sliding-window-maximum/)
+- 算法题 拷贝一个链表，其中每一个节点除了有next指针以外，还会有一个random指针
 
 ## Airwallex
 

@@ -4,3 +4,12 @@
 3怎么把一个readme转成一个html
 4怎么把一个js项目转成ts项目
 5一个仓库的旧分支没有上代码规范，有没有什么方便快捷的方法把这些分支的所有代码都上代码规范
+
+喜马拉雅一面
+1.怎么从头开始搭建一个react项目（不用create-react-app）
+2.让你做项目的性能优化能想到什么点
+  我答了 ssr/webpack/loadable-components/长列表懒加载/react.memo/purecomponent/usememo/usecallback
+  炎哥说可能是想让我回答cdn
+3.promise.all
+4.hook遇到过哪些坑
+5.react fiber

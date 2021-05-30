@@ -13,3 +13,27 @@
 3.promise.all
 4.hook遇到过哪些坑
 5.react fiber
+6.怎么用setTimeout实现setInterval，用哪个好，为什么
+
+pdd商业化一面+二面
+1.css有哪些格式化上下文？  BFC IFC FFC GFC
+2.耗时长的计算或者请求该如何处理？ 时间分片、提前处置、缓存、让后端去做
+3.css变量有没有用过
+4.loadable-component原理
+5.如何用前端代码监测接口性能
+6.有没有了解mobx，跟redux有什么区别
+7.css module
+8.ts的联合类型和交叉类型
+9.怎么保证代码风格和规范，有什么工具
+10.ts类型推导里面的infer怎么用
+11.ts泛型 <T = string>和<T extends string>有什么区别
+12.type和interface区别
+13.commenjs和es6 module有什么区别
+14.scss怎么写函数，怎么写变量
+15.对自己两年内的职业生涯规划
+16.一面算法题： https://leetcode-cn.com/problems/valid-parentheses/  实现object.get
+17.二面算法题： 约瑟夫环（用数组实现）  一个树，每个节点上有name属性，写一个fn，传进去根节点和一个字符串，返回一个二维数组，二维数组里面的每一项是name=string的节点的遍历路径，要求深度遍历和广度遍历都写一下
+18.清理浮动的方式，为什么clear both能够清除浮动
+19.最近了解并实践了什么新技术
+
+

@@ -36,4 +36,20 @@ pdd商业化一面+二面
 18.清理浮动的方式，为什么clear both能够清除浮动
 19.最近了解并实践了什么新技术
 
+小红书一二面
+1.webpack热更新原理
+2.canvas跨域怎么解决
+3.怎么设计埋点方案
+4.webpack的loader和plugin的区别
+5.react-virtualized原理
+6.cnd回溯原理
+7.技术选型为什么要用react，为什么不用vue
+8.跨域的手段
+9.xss攻击是什么，怎么防御
+10.简单请求和非简单请求的区别
+11.rem/em/vh/vw  （px2rem)
+12.0.1+0.2===0.3 怎么解决精度问题（面试官的答案居然是用轮子）
+13.loadable-components原理
+14.做过最有成就感的一件事
+15.算法 https://leetcode-cn.com/problems/er-cha-shu-de-shen-du-lcof/    https://leetcode-cn.com/problems/assign-cookies/
 

@@ -53,3 +53,55 @@ pdd商业化一面+二面
 14.做过最有成就感的一件事
 15.算法 https://leetcode-cn.com/problems/er-cha-shu-de-shen-du-lcof/    https://leetcode-cn.com/problems/assign-cookies/
 
+抖音音乐一面
+1.介绍项目，说亮点
+2.redux-saga和redux-thunk的区别  为什么要用redux-saga  单元测试是怎么做的
+3.浏览器事件循环，与node事件循环的区别，平时有没有写过node
+4.echarts底层原理
+5.3d图形有没有写过
+6.useEffect和useLayoutEffect的区别，DOM闪烁是因为什么
+7.实现一个自定义hook，功能是每当某个state变化的时候，返回上一次state的值
+答案： 
+function usePrevious(state) {
+  let ref = useRef();
+  useEffect(() => {
+    ref.current = state;
+  }, [state])
+  return ref.current;
+}
+8.说出下面代码的输出表现
+for(var i = 0;i<5;i++){
+  setTimeout(() => {console.log(i)}, 1000)
+}
+console.log(i)
+答案:马上输出一个5，隔一秒之后一起输出5个5
+9.第8题想要马上输出一个5之后每隔一秒输出一个5，该怎样改，前提是不改变这两段代码的顺序
+答案：
+for(var i = 0;i<5;i++){
+  setTimeout(() => {console.log(i)}, 1000*(i+1))
+}
+console.log(i)
+10.第9题想要马上输出一个0之后每隔一秒输出12345，应该怎么改（面试官提示用promise)，前提是不改变这两段代码的顺序
+答案：
+for(var i = 0;i<5;i++){
+  a(i)
+}
+const a = (i) => {
+  return new Promise(() => {
+    setTimeout(() => {console.log(i)}, 1000*i)
+  })
+}
+
+抖音音乐二面
+1.介绍项目，说亮点
+2.react-redux用过哪些东西
+3.connect是怎么用的，第三个参数是什么
+4.react 17的新change
+5.hook有用过哪些，useContext的底层实现是什么
+6.react都有哪些性能优化
+7.你们项目为什么用redux做状态管理，什么情况下要用redux什么情况下不该用
+8.redux是怎么初始化和修改的
+9.redux设计原则
+10.手写实现一个antd的modal，怎样保证z-index是最高的，怎么控制modal既可以渲染在document上，又可以挂载在某个dom节点上 (React Portal)
+11.给你两个dom节点，返回他们的离得最近的共同父节点
+12.给两个二进制的数字的字符串，返回他们的和的十进制，不要用parseInt，考虑大数相加，返回一个字符串
